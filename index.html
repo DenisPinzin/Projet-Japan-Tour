@@ -46,19 +46,24 @@
     <!-- MAIN -->
     <main class="h-5">
       <section
-        class="bg-[url('/assets/img/fuji-hero.jpg')] bg-cover bg-center h-[80vh] flex flex-col justify-center align-middle gap-10"
+        class="relative bg-[url('/assets/img/fuji-hero.jpg')] bg-cover bg-center h-[80vh] flex flex-col justify-center items-center gap-10"
       >
+        <!-- Ton overlay avec ::after -->
+        <div
+          class="absolute inset-0 after:absolute after:inset-0 after:bg-black/50 after:content-[''] after:z-0"
+        ></div>
+
+        <!-- Contenu au-dessus -->
         <h1 class="text-white font-extrabold text-4xl text-center z-10">
           Japan-Tour
         </h1>
-        <p class="text-center text-white z-10 bg-black/50 self-center">
+        <p class="text-center text-white z-10 p-2 rounded">
           Partez à la découverte du Japon : temples, sakura, cuisine authentique
           et expériences inoubliables.
         </p>
-
         <a
-          href=""
-          class="bg-red-600 rounded-2xl p-2 text-white justify-center inline-block self-center z-10"
+          href="#"
+          class="bg-red-600 rounded-2xl p-2 text-white inline-block z-10"
           >Voir le catalogue</a
         >
       </section>
